@@ -1,0 +1,77 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Notificações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        Fulana deseja te mandar uma mensagem
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start" class="ion-align-self-start ion-margin-top">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <ion-skeleton-text ></ion-skeleton-text>
+        <ion-row class="ion-justify-content-start">
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        Ciclano postou sobre um assunto que voce tem interesse
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none" *ngFor="let i of [0,1]">
+      <ion-avatar slot="start" class="ion-align-self-start ion-margin-top">
+        <ion-skeleton-text></ion-skeleton-text>
+      </ion-avatar>
+      <ion-label>
+        <ion-skeleton-text ></ion-skeleton-text>
+        <ion-row class="ion-justify-content-start">
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+          <ion-col size="auto">
+            <ion-skeleton-text style="width: 54px; height: 54px"></ion-skeleton-text>
+          </ion-col>
+        </ion-row>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

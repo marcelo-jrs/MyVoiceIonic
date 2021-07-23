@@ -1,0 +1,41 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>MyVoice</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-thumbnail slot="start" class="ion-margin-top">
+        <ion-skeleton-text class="skeleton-rounded skeleton-avatar"></ion-skeleton-text>
+      </ion-thumbnail>
+      <ion-input placeholder="Expresse sua opnião aqui!" #input 
+      [(ngModel)]="inputTexto" 
+      (keyup.enter)="adiciona()"></ion-input>
+      <ion-button (click)="adiciona()">Postar
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-item> 
+  </ion-card>
+
+  <ion-card>
+    <ion-list class="ion-padding-bottom">
+      <ion-item lines="none" *ngFor="let item of listaService.getLista(); 
+      let indice=index">
+        <ion-thumbnail slot="start" class="ion-margin-top">
+          <ion-skeleton-text class="skeleton-avatar"></ion-skeleton-text>
+        </ion-thumbnail>
+        <ion-label>
+          {{item[1]}}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
+
+

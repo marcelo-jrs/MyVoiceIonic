@@ -1,0 +1,92 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="tertiary">
+    <ion-title>Crie sua Conta MyVoice
+      <ion-icon name="megaphone"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label animated position="floating">CPF</ion-label>
+      <ion-input required [(ngModel)]="login"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label animated position="floating">Nome</ion-label>
+      <ion-input required [(ngModel)]="nome"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label animated position="floating">Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label animated position="floating">Senha</ion-label>
+      <ion-input type="password" required [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-label>Masculino</ion-label>
+          </ion-col>
+          <ion-checkbox></ion-checkbox>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-label>Feminino</ion-label>
+          </ion-col>
+          <ion-checkbox></ion-checkbox>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">DD/MM/YYYY</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
+    </ion-item>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" type="submit" (click)="add()">Criar Conta</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block" (click)="btnClicked()" routerLink="/login">Entrar com Conta já Existente
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<!--<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input required [(ngModel)]="nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input required [(ngModel)]="login"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" required [(ngModel)]="senha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button color="tertiary" type="submit" (click)="add()">Criar Conta</ion-button>
+      <ion-button color="tertiary" (click)="btnClicked()" routerLink="/home">Voltar</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>-->

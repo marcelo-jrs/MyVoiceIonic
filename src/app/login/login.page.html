@@ -1,0 +1,64 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="tertiary">
+    <ion-title>Bem-Vindo ao MyVoice
+      <ion-icon name="megaphone"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label animated position="floating">CPF</ion-label>
+      <ion-input required [(ngModel)]="login"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label animated position="floating">Senha</ion-label>
+      <ion-input required [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      <ion-button color="tertiary" expand="block" (click)="logar()">Login</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="tertiary" expand="block" (click)="btnClicked()" routerLink="/registration">Criar Conta</ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+<!--<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header color="success">
+      <ion-card-title>Bem-Vindo ao MyVoice
+        <ion-icon name="megaphone"></ion-icon>
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card> 
+  <ion-card>
+    <ion-input required [(ngModel)]="login" placeholder="CPF"></ion-input>
+    <ion-input type="password" required [(ngModel)]="senha" placeholder="Senha"></ion-input>
+  </ion-card>
+  <div class="class">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button width="block" color="success" size="small" (click)="logar()">
+            Log-In
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button width="block" color="success" size="small" (click)="btnClicked()" routerLink="/registration">
+            Criar Conta
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>-->
